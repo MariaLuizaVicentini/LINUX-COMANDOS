@@ -13,6 +13,7 @@ ele realiza uma copia sem compactacao dos arquivos passados como parametro, ou s
 • -f indica que o destino é um arquivo em disco;
 • -v exibe o nome de cada arquivo compactado;
 • -x extrai os arquivos agrupados no arquivo .tar.
+• -z extrai os arquivos agrupados no arquivo .tar.
 
 
 agrupando arquivos e compactando-os em uma pasta chamada backup
@@ -26,4 +27,35 @@ pra descompactar um arquivo:
 ```
 tar xvf nome_arquivo.tar
 ```
+
+----
+
+# O tipo .tar.gz
+
+O .tar.gz consiste em dois processos diferentes e interligados, sendo que pri-
+meiro ele cria um arquivo .tar e, em seguida, compacta utilizando o formato .gz.
+Neste caso, além de gerar um único arquivo com o .tar, ele será compactado, re-
+duzindo assim o seu tamanho.
+
+
+inda dentro da pasta backup, vamos testar a criação do nosso arquivo dessa
+vez compactado com .tar.gz:
+
+```
+tar zcvf backup.tar.gz *.txt
+```
+
+
+pra verificar o tamnho dos arquivos
+```
+du -h nome_arquivo.txt
+```
+
+
+Para descom-
+pactar arquivos .tar.gz usa-se as opções zxvf:
+```
+tar zxvf meu_arquivo.tar.gz
+```
+
 
