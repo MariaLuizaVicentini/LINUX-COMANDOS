@@ -21,3 +21,9 @@ tar -cf meu_primeiro_backup.tar *.txt
 ```
 
 Esse arquivo chamado backup.tar, que representa a união de todos os arquivos com extensão .txt
+
+pra descompactar um arquivo:
+```
+tar xvf nome_arquivo.tar
+```
+
