@@ -59,3 +59,26 @@ tar zxvf meu_arquivo.tar.gz
 ```
 
 
+Com o .tar.bz2 ocorre o mesmo caso que com o .tar.gz: a compactação
+com o formato .bz2 é mais eficiente que o .gz, porém é mais lenta na hora de
+gerar a cópia.
+
+
+Vamos criar um arquivo compactado com .tar.bz2 utilizando as opções
+jcvf e conferir a diferença entre os tamanhos com o comando du
+
+```
+tar jcvf backup.tar.bz2 *.txt
+```
+```
+du -h backup.tar*
+```
+
+
+Não houve diferença entre os tamanhos nos formatos .gz e .bz2, já que esta-
+mos compactando pequenos arquivos texto. Porém é possível notar a diferença em
+arquivos maiores, por exemplo uma imagem ISO de um DVD.
+
+Para fazer a descompactação de formatos .bz2 usamos as opções jxvf:
+```
+```
