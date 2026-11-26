@@ -81,4 +81,26 @@ arquivos maiores, por exemplo uma imagem ISO de um DVD.
 
 Para fazer a descompactação de formatos .bz2 usamos as opções jxvf:
 ```
+tar jxvf backup.tar.bz2
+```
+
+
+----
+
+# Conhecendo o gzip/gnunzip
+
+
+O Gzip gere um arquivo no formato .gz
+-As opções -c e -r respectivamente informam que queremos criar um arquivo
+e compactar
+```
+gzip -c -r *.txt > backup.gz
+```
+
+Para descompactar usamos o gunzip, que pode ser utilizado com as opções -c
+e -v para exibir o conteúdo a ser descompactado e informações sobre o nível de
+compactação dos arquivos:
+
+```
+gunzip backup.gz
 ```
